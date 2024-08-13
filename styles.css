@@ -20,26 +20,27 @@ body {
 }
 
 .background {
-    position: absolute; /* Position the div absolutely to cover the entire viewport */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    background-image: url('backgroundpage1.jpg'); /* Replace with the actual path to your image */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
-    z-index: -1; /* Make sure it is behind other content */
-    animation: zoom 5s infinite alternate; /* Apply the zoom animation */
+    height: 100vh;
+    background-image: url('backgroundpage1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: zoom 5s infinite alternate;
     opacity: 0.5;
 }
 
 @keyframes zoom {
     0% {
-        background-size: 100%; /* Start with the background at its normal size */
+        background-size: 100%;
     }
+
     100% {
-        background-size: 120%; /* End with the background slightly zoomed in */
+        background-size: 120%;
     }
 }
 
@@ -50,10 +51,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(94, 92, 92, 0.377); /* White background with 70% opacity */
-    color: #000; /* Adjust text color if needed for contrast */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better separation */
-    z-index: 1000; /* Ensure the header is above other content */
+    background-color: rgba(94, 92, 92, 0.377);
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .nav-links {
@@ -84,7 +85,7 @@ header .container {
 }
 
 header .logo img {
-    width: 50px; /* Increased logo size */
+    width: 50px;
     height: auto;
     margin-left: -1050%;
 }
@@ -92,12 +93,12 @@ header .logo img {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Increased gap between menu items */
+    gap: 30px;
 }
 
 nav ul li a {
     color: #ffffff;
-    font-size: 1.6rem; /* Increased font size */
+    font-size: 1.6rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -106,7 +107,6 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -247,54 +247,55 @@ section h5 {
 
 .project-cards {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping of cards */
-    gap: 20px; /* Space between the cards */
-    justify-content: center; /* Center the cards */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 #projects {
     background-image: url('backgroundpage5.jpg');
-    background-size: cover; /* Adjusts the size of the background image */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 60px; /* Optional: add padding to ensure content doesn't touch the edges */
-    animation: zoom 5s infinite alternate; /* Apply the zoom animation */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    animation: zoom 5s infinite alternate;
+
 }
 
 .card {
     background-color: #111;
     border: 1px solid #00bfff;
     border-radius: 13px;
-    padding: 13px; /* Reduced padding */
-    width: calc(22% - 75px); /* Adjust width to fit 3 cards per row with reduced spacing */
+    padding: 13px;
+    width: calc(22% - 75px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 191, 255, 0.2);
 }
 
 .card img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
     border-radius: 10px;
-    margin-bottom: 10px; /* Reduced margin */
+    margin-bottom: 10px;
 }
 
 .card h6 {
-    font-size: 1.25rem; /* Slightly smaller font size */
-    margin-bottom: 8px; /* Reduced margin */
+    font-size: 1.25rem;
+    margin-bottom: 8px;
     color: #00bfff;
 }
 
 .card p {
-    font-size: 0.9rem; /* Slightly smaller font size */
+    font-size: 0.9rem;
     color: #aaa;
-    margin-bottom: 10px; /* Reduced margin */
+    margin-bottom: 10px;
 }
 
 .card a.btn {
     display: inline-block;
     background-color: #00bfff;
     color: #000;
-    padding: 8px 12px; /* Adjusted padding */
+    padding: 8px 12px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -309,7 +310,7 @@ section h5 {
 .about-container {
     display: flex;
     align-items: center;
-    gap: 0px; /* Space between image and text */
+    gap: 0px;
     padding: 60px 20px;
 }
 
@@ -355,11 +356,16 @@ section h5 {
 
 #about {
     background-image: url('backgroundpage2.jpg');
-    background-size: cover; /* Adjusts the size of the background image */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 20px; /* Optional: add padding to ensure content doesn't touch the edges */
-    animation: zoom 5s infinite alternate; /* Apply the zoom animation */
+    background-size: cover;
+    /* Adjusts the size of the background image */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    padding: 20px;
+    /* Optional: add padding to ensure content doesn't touch the edges */
+    animation: zoom 5s infinite alternate;
+    /* Apply the zoom animation */
 }
 
 /* Education Section */
@@ -370,9 +376,9 @@ section h5 {
 }
 
 .education-grid {
-    display: flex; 
-    justify-content: space-between; 
-    gap: 20px; 
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .education-card {
@@ -380,7 +386,7 @@ section h5 {
     border: 1px solid #00bfff;
     border-radius: 10px;
     padding: 20px;
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,7 +423,7 @@ section h5 {
 /* Animation for Education Cards */
 .education-card.show {
     opacity: 1;
-    transform: translateY(0); /* Move to original position */
+    transform: translateY(0);
 }
 
 /* Hover Effect for Education Cards */
@@ -429,36 +435,36 @@ section h5 {
 
 #education {
     background-image: url('backgroundpage3.jpg');
-    background-size: cover; /* Adjusts the size of the background image */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 60px; /* Optional: add padding to ensure content doesn't touch the edges */
-    animation: zoom 5s infinite alternate; /* Apply the zoom animation */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    animation: zoom 5s infinite alternate;
 }
 
 
 /* Skills Section */
 .skills-section {
     padding: 60px 20px;
-    background-color: #111; /* Optional background color */
+    background-color: #111;
 }
 
 .skills-container {
     display: flex;
-    justify-content: center; /* Center the skills sections */
-    gap: 20px; /* Adjust the gap between the two skill sections */
+    justify-content: center;
+    gap: 20px;
 }
 
 .skills-category {
-    background-color: transparent; /* Optional background color */
+    background-color: transparent;
     border-radius: 10px;
     padding: 20px;
-    flex: 1; /* Allow both categories to take equal space */
-    max-width: 500px; /* Adjust max width as needed */
+    flex: 1;
+    max-width: 500px;
 }
 
 .skills-category h4 {
-    font-size: 2.2rem; /* Font size for section headers */
+    font-size: 2.2rem;
     margin-bottom: 15px;
     color: #ffa647;
     text-align: center;
@@ -467,7 +473,7 @@ section h5 {
 .skills-list {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between individual skills */
+    gap: 15px;
 }
 
 .skill {
@@ -524,13 +530,14 @@ section h5 {
     width: 100%;
     text-align: center;
 }
+
 #skills {
     background-image: url('backgroundpage4.jpg');
-    background-size: cover; /* Adjusts the size of the background image */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 60px; /* Optional: add padding to ensure content doesn't touch the edges */
-    animation: zoom 5s infinite alternate; /* Apply the zoom animation */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    animation: zoom 5s infinite alternate;
 }
 
 
@@ -538,7 +545,7 @@ section h5 {
 @media (max-width: 768px) {
     .skills-container {
         flex-direction: column;
-        gap: 20px; /* Adjust gap for smaller screens */
+        gap: 20p
     }
 }
 
@@ -573,6 +580,7 @@ footer {
     from {
         text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #007acc;
     }
+
     to {
         text-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #007acc;
     }
@@ -583,6 +591,7 @@ footer {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -593,11 +602,11 @@ footer {
 
 #contact {
     background-image: url('backgroundpage6.jpg');
-    background-size: cover; /* Adjusts the size of the background image */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 60px; /* Optional: add padding to ensure content doesn't touch the edges */
-    animation: zoom 5s infinite alternate; /* Apply the zoom animation */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px;
+    animation: zoom 5s infinite alternate;
 }
 
 .contact-section {
@@ -628,7 +637,7 @@ footer {
 
 #contact form {
     max-width: 600px;
-    margin: 0px 0 0 0; /* Removed auto for left alignment */
+    margin: 0px 0 0 0;
     padding-right: 20px;
     text-align: left;
 }
@@ -696,7 +705,8 @@ footer {
     margin-left: 20px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #444;
@@ -731,8 +741,13 @@ footer {
 
 
 @keyframes expandSkill {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 /* Project Card Hover Effect */
@@ -793,31 +808,31 @@ section h5:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px; /* Set a fixed size for icons */
+    width: 50px;
     height: 50px;
-    background-color: #333; /* Default background color */
+    background-color: #333;
     border-radius: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    color: #fff; /* Default icon color */
+    color: #fff;
     text-decoration: none;
 }
 
 /* Social Media Icon Hover Effect */
 .social-media-icons a:hover {
-    transform: scale(1.2); /* Slightly scale up the icon */
-    background-color: #007bff; /* Background color on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.2);
+    background-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Ensure icons scale properly */
 .social-media-icons img {
-    width: 24px; /* Set icon size */
+    width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
 }
 
 .social-media-icons a:hover img {
-    transform: scale(1.1); /* Scale up the icon image */
+    transform: scale(1.1);
 }
 
 /* Download CV Button */
@@ -875,4 +890,239 @@ section h5:hover {
     background-color: #fff;
     color: #000;
     border-color: #ff0066;
+}
+
+/* For phones */
+@media (max-width: 480px) {
+    .container {
+        display: auto;
+        justify-content: auto;
+        align-items: auto;
+        margin: auto;
+        padding: 0 0px;
+    }
+
+    header {
+        width: 184%;
+        padding: 14px 16px;
+        display: flex;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    .hero {
+        display: flex;
+        align-items: unset;
+        margin: -30px;
+        margin-left: 31px;
+        margin-bottom: 600px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        margin: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+        margin: 20px 0;
+        margin-left: -2px;
+    }
+
+    .hero-content p {
+        font-size: 21px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .hero-content {
+        max-width: 50%;
+        position: absolute;
+        margin-bottom: 27px;
+        margin-left: -89px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 53px;
+    }
+
+    .download-btn {
+        padding: 23px 30px;
+        border-radius: 50px;
+        font-size: 20px;
+        position: absolute;
+    }
+
+    .contact-btn {
+        padding: 11px 60px;
+        border-radius: 50px;
+        position: absolute;
+        margin-left: 211px;
+        font-size: 20px;
+    }
+
+    .about-container {
+        padding: 0px;
+        justify-content: center;
+        margin-right: -333px;
+    }
+
+    .about-image {
+        flex: 1;
+        margin-left: -314px;
+    }
+
+    .about-image img {
+        width: 83%;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 191, 2)
+    }
+
+    .about-content h2 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        animation: slideIn 1s ease-out forwards;
+        color: #ff0066;
+    }
+
+    .about-content p {
+        font-size: 1.2rem;
+        color: #ffffff;
+        margin-bottom: 15px;
+        line-height: 1.8;
+    }
+
+    .about-content {
+        flex: 2;
+        margin: 70px;
+    }
+
+    #about {
+        background-image: url(backgroundpage2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0px;
+        animation: zoom 5s infinite alternate;
+        margin-right: -5px;
+    }
+
+    #education {
+        background-color: #0a08081c;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px;
+        animation: zoom 5s infinite alternate;
+        margin-left: 320px;
+        background-image: url(blank.png);
+    }
+
+    .skills-category {
+        background-color: transparent;
+        border-radius: 13px;
+        margin-left: 140px;
+        margin-right: -200px;
+
+    }
+
+    section h3 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 50px;
+        animation: slideIn 1s ease-out forwards;
+        margin-left: 255px;
+    }
+
+    .project-cards {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        padding: 0px;
+        margin-right: -345px;
+    }
+
+    .card {
+        background-color: #111;
+        border: 1px solid #00bfff;
+        border-radius: 13px;
+        padding: 20px;
+        width: 300px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 191, 255, 0.2);
+        text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #444;
+        border-radius: 4px;
+        background-color: #555;
+        color: #ccc;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer {
+        background: #111;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+        margin-right: -355px;
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 183%;
+        height: 100vh;
+        background-image: url(bgphone1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        animation: zoom 5s infinite alternate;
+        opacity: 0.5;
+    }
+
+    #skills {
+        background-image: url(blank.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px;
+        animation: zoom 5s infinite alternate;
+    }
+
+    #projects {
+        background-image: url(blank.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px;
+        animation: zoom 5s infinite alternate;
+    }
+
+    #contact {
+        background-image: url(backgroundpage6.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px;
+        animation: zoom 5s infinite alternate;
+        width: 183%;
+    }
+
 }
