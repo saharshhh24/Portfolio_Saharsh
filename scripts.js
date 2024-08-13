@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Smooth scroll for navigation links
     const navLinks = document.querySelectorAll("nav ul li a");
 
     navLinks.forEach(link => {
-        link.addEventListener("click", function(event) {
+        link.addEventListener("click", function (event) {
             event.preventDefault();
             const targetSection = document.querySelector(this.getAttribute("href"));
             targetSection.scrollIntoView({ behavior: "smooth" });
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Form validation
     const contactForm = document.querySelector(".contact-form form");
 
-    contactForm.addEventListener("submit", function(event) {
+    contactForm.addEventListener("submit", function (event) {
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const subject = document.getElementById("subject").value.trim();
